@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./codingpedia.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingPedia</title>
+  </head>
+  <body>
+    <header class="box gridWrap">
+      <h1 class="gridOne">Welcome to CodingPedia!</h1>
+      <nav class="box gridTwo">
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="php.html">PHP</a></li>
+          <li><a href="sql.html">SQL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="containerPlacementMain">
+      <main class="box placementMain">
+        <p>
+          CodingPedia is a collective encyclopedia project on the Internet
+          aiming to be universal and multi-lingual which functions as a wiki.<br />
+          CodingPedia has for goal to offer freely reusable objective and
+          verifiable content that anyone can modify and improve.
+        </p>
+        <article>
+          <form action="">
+            <div>
+              <label for="name">Name</label>
+              <label for="firstName">First name</label>
+              <label for="email">Email</label>
+              <label for="age">Age</label>
+              <label for="phone">Phone</label>
+              <label for="sex">Sex</label>
+              <label for="hairColor">Hair color</label>
+              <label for="date">Date</label>
+              <label for="technology">Technology</label>
+              <label for="question">Question</label>
+            </div>
+            <div>
+              <input type="text" name="name" id="name" required />
+              <input type="text" name="firstName" id="firstName" required />
+              <input type="text" name="email" id="email" required />
+              <input type="number" name="age" id="age" min="3" max="99" />
+              <input type="tel" name="phone" id="phone" min="10" max="10" />
+              <input type="radio" name="sex" id="sex" checked /> Mâle
+              <input type="radio" name="sex" id="sex">female
+              <input type="color" />
+              <input type="date" value="2023-09-26" />
+              <select name="technology" id="technology">
+                <option value="php">php</option>
+                <option value="sql">sql</option>
+                <option value="html">html</option>
+              </select>
+              <textarea
+                name="question"
+                id="question"
+                cols="30"
+                rows="4"
+              ></textarea>
+              <button type="">Submit</button>
+            </div>
+          </form>
+        </article>
+      </main>
+      <aside class="box placementAside">
+        Hi ! my name is Duncan Carbonnier, i'm 25 years old and i'm an Epitech
+        student.
+      </aside>
+    </div>
+    <div class="moving_square"></div>
+    <footer class="box">
+      <address>
+        <p>name : Carbonnier</p>
+        <p>first name : Duncan</p>
+        <p>address : 5 allée Marie Berhaut</p>
+        <p>tel : 06.61.93.51.47</p>
+      </address>
+    </footer>
+  </body>
+</html>

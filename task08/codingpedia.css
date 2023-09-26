@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+.box {
+    z-index: 1;
+    background-color: white;
+    border: black solid 2px;
+    margin : 10px;
+    padding:0px 10px 0px 10px;
+}
+
+.containerPlacementMain {
+ display: flex;
+ width: 100%;
+}
+
+.placementMain {
+    width: 80%;
+}
+
+.placementAside {
+    width: 20%;
+}
+
+.gridWrap {
+    display: grid;
+    grid-template-columns: minmax(100px, auto);
+}
+
+.gridOne {
+    grid-column: 1/5;
+}
+
+.gridTwo {
+    grid-column: 6;
+}
+
+.moving_square {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation: movingSquare 5s 0ms ease-in-out both;
+    animation-iteration-count: 5;
+}
+
+@keyframes movingSquare{
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+        transform: translate(0px, 300px);
+    }
+    50% {
+        background-color: blue;
+        transform: translate(300px, 300px);
+    }
+    75% {
+        background-color: yellow;
+        transform: translate(300px, 0px);
+    }
+    100% {
+        background-color: red;
+
+    }
+}

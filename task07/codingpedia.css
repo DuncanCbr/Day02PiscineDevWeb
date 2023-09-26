@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+.box {
+    background-color: white;
+    border: black solid 2px;
+    margin : 10px;
+    padding:0px 10px 0px 10px;
+}
+
+.containerPlacementMain {
+ display: flex;
+ width: 100%;
+}
+
+.placementMain {
+    width: 80%;
+}
+
+.placementAside {
+    width: 20%;
+}
+
+.gridWrap {
+    display: grid;
+    grid-template-columns: minmax(100px, auto);
+}
+
+.gridOne {
+    grid-column: 1/5;
+}
+
+.gridTwo {
+    grid-column: 6;
+}
